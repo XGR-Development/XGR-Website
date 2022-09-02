@@ -16,7 +16,7 @@
       <img src="/src/xgr-logo-white-transparent.png" width="65px" height="65px" alt="XGR Logo"/>
     </a>
     <div class="xgr-nav">
-      <a>Infos</a>
+      <a href="/html/infos.asp" class="nav-button">Infos</a>
     </div>
   </div>
   
