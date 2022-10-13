@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>XGR | Page d'accueil</title>
+    <title>XGR Development</title>
     
-    <link rel="icon" type="image/x-icon" href="/src/xgr.ico">
+    <link rel="icon" type="image/x-icon" href="../src/xgr.ico">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/darkmode.css" id="theme">
   </head>
 <body>
+  <header class="header">
+    <div class="header-container">
+      <button class="header-dark-mode-button" id="mode-button" onclick="switchMode()">Dark Mode 🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consequat odio sed risus finibus, vel accumsan massa tincidunt. Etiam faucibus ex id quam maximus finibus. Nulla non ante nibh. Quisque hendrerit, enim ac tristique porttitor, leo risus facilisis arcu, sit amet bibendum nunc ligula vitae erat. Mauris in leo dictum, facilisis ante quis, dignissim arcu. Etiam nec orci id velit dictum convallis non sit amet massa. Vestibulum vitae laoreet sapien.<br><br>
+
+Vivamus fringilla, est non feugiat aliquam, turpis ex eleifend nulla, non condimentum magna augue vel augue. Aenean et tristique magna. Phasellus tincidunt tortor et accumsan congue. Donec vel commodo neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eget risus felis. Fusce porttitor lacinia ullamcorper. Mauris id magna a lectus malesuada condimentum non a enim. Cras ex dui, ultrices sed dui eu, hendrerit commodo metus. Mauris porttitor sem mi, et vestibulum nunc malesuada a.<br><br>
+
+Nam vitae egestas odio. Ut consectetur imperdiet magna. Nam consequat arcu velit, quis ullamcorper eros mollis eget. Aenean tincidunt odio ut porttitor aliquam. Praesent a eleifend dui. Phasellus placerat massa ac urna porttitor, hendrerit lacinia ex consequat. Suspendisse potenti. Praesent eget sagittis mauris.<br><br>
+
+Pellentesque commodo nunc condimentum libero tincidunt mattis. Suspendisse posuere malesuada dapibus. Donec vel pulvinar velit. Sed facilisis odio in sapien sagittis, vitae consectetur dolor mattis. Donec posuere diam sed lorem dapibus, vel faucibus orci accumsan. Quisque vulputate sem non volutpat euismod. Maecenas elit lectus, ullamcorper et euismod sed, condimentum vel odio. Ut imperdiet cursus rutrum. Pellentesque viverra tortor iaculis elit semper, lacinia accumsan lorem eleifend. Duis pulvinar orci ac rhoncus luctus. Suspendisse potenti. Sed eget sodales turpis, in fermentum nisi. Sed congue neque nunc, fringilla faucibus lorem commodo sit amet. Nam mollis, neque vitae ultrices scelerisque, enim lectus eleifend dui, id commodo velit dui vitae tellus. Fusce ut feugiat eros. Vestibulum et enim interdum, iaculis quam ut, convallis justo.<br><br>
+
+In porttitor aliquet vulputate. Sed sed rhoncus justo. Pellentesque mollis vel eros a eleifend. Pellentesque sit amet scelerisque sem. Nunc eget egestas libero. Nullam venenatis at est viverra mattis. Curabitur ultricies dictum quam tempor maximus.<br><br>
+
+Suspendisse eu scelerisque nulla. Vivamus augue lectus, blandit non pretium sed, molestie ut diam. Phasellus ut congue turpis, id posuere justo. Morbi placerat vel nulla non ornare. Curabitur dui dolor, convallis sit amet placerat eget, viverra nec quam. Proin quis ex eget lacus sollicitudin pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam mollis rutrum nunc quis ultrices. Quisque pellentesque ultricies eros, in lobortis dolor molestie a. Mauris efficitur justo id arcu faucibus interdum. Aenean semper interdum tortor sit amet porttitor. Mauris bibendum lectus rhoncus sollicitudin feugiat. Etiam pellentesque lacus ac mi elementum rhoncus. Donec ornare dui ac consectetur egestas.<br><br>
+
+Nunc pulvinar mauris ac maximus malesuada. Praesent consequat convallis dolor, porttitor iaculis ipsum viverra id. Integer eget porta neque, et tincidunt felis. Donec aliquam iaculis interdum. Curabitur placerat vehicula iaculis. Vivamus in viverra odio. Morbi vehicula mi odio, ut faucibus libero convallis ut. Aenean iaculis orci ultrices est placerat luctus. Vestibulum et felis vel dui hendrerit efficitur. Vestibulum convallis dui eu consectetur fermentum. Etiam fringilla ut tortor eget consectetur. Vestibulum sed dui sem. Nam vitae sem sit amet lorem sodales tincidunt. Vivamus semper non magna porttitor porttitor. In id diam sit amet augue congue interdum. Vivamus massa purus, dapibus sed rhoncus in, consectetur non ante.<br><br>
+
+Donec posuere venenatis justo, ac posuere tortor. Morbi sed aliquam leo. In non lectus urna. Morbi elementum dolor id leo feugiat porta. Donec aliquet dui non sem mattis iaculis. Vivamus ac rhoncus ligula. Ut sollicitudin ante vel lectus sollicitudin placerat. Nullam id magna non lectus laoreet mattis vitae a neque. Morbi cursus, ipsum eget sollicitudin lacinia, justo lacus rhoncus ante, vitae venenatis ligula velit vel tortor. Donec eget nisi lacus. Donec dictum quis lectus mollis pulvinar. Nunc dignissim iaculis efficitur. Donec vulputate mollis dolor, in volutpat ex interdum eu.<br><br>
+
+Vestibulum vitae condimentum nunc. Fusce at orci vel magna sodales consectetur id ac lectus. Vivamus tincidunt neque non urna vulputate, sed porttitor leo sollicitudin. Sed euismod scelerisque diam, sed aliquet nisl posuere at. Ut tempus justo non rhoncus lacinia. Nulla ac ligula metus. Aenean at tellus ex. Nunc quis nisi luctus nulla maximus condimentum non sed quam. Duis interdum, orci ut posuere ultrices, nisi odio eleifend eros, nec consequat sem lectus ac diam. Aliquam lectus risus, dignissim non sem non, tincidunt fringilla nunc.<br><br>
+
+Nunc volutpat, orci quis tempus tempor, lorem velit pulvinar libero, vel iaculis nisl mi ac risus. Nunc eu turpis quam. Phasellus dapibus elit dolor, id lacinia neque eleifend nec. Aliquam erat volutpat. Cras feugiat, nunc nec volutpat imperdiet, nisl lorem scelerisque ante, eleifend dictum odio sem eget nulla. Vestibulum ultricies arcu neque, et ultricies nisl condimentum in. Ut pharetra et massa nec fermentum. Nulla placerat quis nisi at pulvinar. Integer vel iaculis justo. Sed at augue sed nunc pharetra lobortis. Cras convallis purus vitae mi tempus cursus at ut neque.<br><br>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="footer-left-part">
+        <li class="footer-medias-list">
+          <ul>
+            <a href="https://twitter.com/XGR_Development" target="_blank" class="footer-media-list-item">
+              <img src="../static/darkmode/twitter-icon.png" alt="XRG Development Twitter" width="30" height="30" id="t-media-icon">
+            </a>
+          </ul>
+          <ul>
+            <a href="https://instagram.com/xgr.development" target="_blank" class="footer-media-list-item">
+              <img src="../static/darkmode/instagram-icon.png" alt="XGR Development Instagram" width="30" height="30" id="i-media-icon">
+            </a>
+          </ul>
+          <ul>
+            <a href="https://github.com/XGR-Development" target="_blank" class="footer-media-list-item">
+              <img src="../static/darkmode/github-icon.png" alt="XGR Development GitHub" width="30" height="30" id="g-media-icon">
+            </a>
+          </ul>
+        </li>
+        <div class="footer-rights">
+          XGR Development, All rights reserved. 2022 - present
+        </div>
+      </div>
+      <div class="footer-right-part">
+        <img src="../src/ribbon.png" alt="Ribbon" width="90" height="90">
+      </div>
+    </div>
+  </footer>
 
 <script src="/js/index.js"></script>
 </body>
