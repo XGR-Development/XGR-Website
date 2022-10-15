@@ -1,6 +1,7 @@
 @keyframes modeButtonChange {
     to {
         border-color: #eda3fa;
+        background-color: #eda3fa20;
     }
 }
 
@@ -23,9 +24,25 @@ main {
     font-size: x-large;
 }
 
-.header-container {
-    padding-top: 15px;
+.header {
+    display: flex;
+    background-color: #151515;
+    border-bottom: 2px solid #eda3fa30;
+    height: 70px;
+}
+.header-navbar {
+    width: 100%;
     text-align: center;
+    padding-top: 17px;
+}
+
+.header-container {
+    position: relative;
+    right: 20px;
+    height: 100%;
+    width: 150px;
+    text-align: center;
+    padding-top: 17px;
 }
 
 .header-dark-mode-button {
@@ -33,9 +50,9 @@ main {
     font-size: 17px;
     color: #ffffff;
     border: 2px solid #eda3fa30;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 50px;
+    border-radius: 2rem;
+    height: 50%;
+    width: 150px;
     cursor: pointer;
 }
 
