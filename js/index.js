@@ -1,19 +1,19 @@
 //------------------------------ Switch Mode -------------------------------
 
-const lightTheme = "../css/lightmode.css"
-const darkTheme = "../css/darkmode.css";
+const lightTheme = "/css/lightmode.css"
+const darkTheme = "/css/darkmode.css";
 
-const darkTwitter = "../static/darkmode/twitter-icon.png";
-const darkInsta = "../static/darkmode/instagram-icon.png";
-const darkGithub = "../static/darkmode/github-icon.png";
-const darkX = "../src/xgr-dark.png";
-const darkLogo = "../src/xgr-logo-white-transparent.png"
+const darkTwitter = "/static/darkmode/twitter-icon.png";
+const darkInsta = "/static/darkmode/instagram-icon.png";
+const darkGithub = "/static/darkmode/github-icon.png";
+const darkX = "/src/xgr-dark.png";
+const darkLogo = "/src/xgr-logo-white-transparent.png"
 
-const lightTwitter = "../static/lightmode/twitter-icon.png";
-const lightInsta = "../static/lightmode/instagram-icon.png";
-const lightGithub = "../static/lightmode/github-icon.png";
-const lightX = "../src/xgr-light.png";
-const lightLogo = "../src/xgr-logo-black-transparent.png"
+const lightTwitter = "/static/lightmode/twitter-icon.png";
+const lightInsta = "/static/lightmode/instagram-icon.png";
+const lightGithub = "/static/lightmode/github-icon.png";
+const lightX = "/src/xgr-light.png";
+const lightLogo = "/src/xgr-logo-black-transparent.png"
 
 const twitterIcon = document.getElementById("t-media-icon");
 const instagramIcon = document.getElementById("i-media-icon");
