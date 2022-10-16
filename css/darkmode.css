@@ -175,6 +175,7 @@ main {
 .main-suggest-item {
     border: 2px solid;
     border-radius: 1.35rem;
+    background-color: #1d1d1d;
     display: block;
     margin-left: auto;
     margin-right: auto;
