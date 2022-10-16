@@ -1,3 +1,8 @@
+const { Octokit } = require("octokit");
+const config = require("../config.json")
+
+//------------------------------ Switch Mode -------------------------------
+
 const lightTheme = "../css/lightmode.css"
 const darkTheme = "../css/darkmode.css";
 
@@ -36,3 +41,19 @@ function switchMode() {
     button.innerHTML = "Light Mode ☀️";
   }
 }
+
+//------------------------------- GitHub API --------------------------------
+
+const GitHub_Token = config.GitHub_Token
+
+const octokit = new Octokit({
+  auth: GitHub_Token
+})
+
+async function octo() {
+  await octokit.request("GET /repos/{owner}/", {
+    owner: "XGR-Development"
+  })
+}
+
+console.log(octo())
