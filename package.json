@@ -1,6 +1,6 @@
 {
   "name": "xgr-development-website",
-  "version": "0.0.1-alpha",
+  "version": "0.1.0",
   "description": "The official website of XGR Development.",
   "main": "index.js",
   "scripts": {
