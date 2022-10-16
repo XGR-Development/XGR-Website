@@ -8,6 +8,14 @@
 @keyframes navbarItemHover {
     to {
         border-bottom: 3px solid #eda3fa;
+        background-color: #eda3fa20;
+    }
+}
+
+@keyframes headerLogoAnchorHover {
+    to {
+        border-right: 3px solid #eda3fa;
+        background-color: #eda3fa20;
     }
 }
 
@@ -44,17 +52,27 @@ main {
 }
 
 .header-logo-box {
-    width: 120px;
+    width: 200px;
     padding-left: 10px;
     display: flex;
     align-items: center;
 }
 
-.header-logo {
-    padding-left: 20px;
-    padding-right: 20px;
+.header-logo-anchor {
     border-right: 3px solid;
     border-radius: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-logo-anchor:hover {
+    animation: headerLogoAnchorHover 1s forwards;
+}
+
+.header-logo {
+    padding-right: 20px;
+    padding-left: 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
