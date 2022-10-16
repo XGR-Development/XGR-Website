@@ -1,7 +1,7 @@
 {
   "name": "xgr-development-website",
   "version": "0.0.1-alpha",
-  "description": "",
+  "description": "The official website of XGR Development.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,12 +11,9 @@
     "url": "git+https://github.com/XGR-Development/XGR.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/XGR-Development/XGR/issues"
   },
-  "homepage": "https://github.com/XGR-Development/XGR#readme",
-  "dependencies": {
-    "octokit": "^2.0.9"
-  }
+  "homepage": "https://github.com/XGR-Development/XGR#readme"
 }
