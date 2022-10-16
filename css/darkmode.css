@@ -21,18 +21,19 @@
     margin: 0px;
     padding: 0px;
     line-height: 2rem;
+    color: #ffffff;
 }
 
 body {
     background-color: #191919;
-    color: #ffffff;
-    height: auto;
+    height: 100%;
 }
 
 main {
     padding: 35px;
     text-align: justify;
     font-size: x-large;
+    height: 100%;
 }
 
 .header {
@@ -86,7 +87,6 @@ main {
 
 .navbar-list-item {
     text-decoration: none;
-    color: #ffffff;
     display: block;
     margin: 18px 0;
     margin-left: 100px;
@@ -110,7 +110,6 @@ main {
 .header-dark-mode-button {
     background-color: #151515;
     font-size: 17px;
-    color: #ffffff;
     border: 2px solid #eda3fa30;
     border-radius: 2rem;
     height: 50%;
