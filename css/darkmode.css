@@ -230,7 +230,7 @@ main {
   /*Shrinking for mobile*/
   @media (max-width: 768px) {
     .waves {
-      height:40px;
+      height: 60px;
       min-height:40px;
     }
     .content {
