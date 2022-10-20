@@ -49,3 +49,11 @@ function switchMode() {
     button.innerHTML = "Light Mode ☀️";
   }
 }
+
+let header = document.querySelector('header')
+let toggle = document.querySelector('.menu-toggle')
+let navigation = document.querySelector(".header-navigation")
+
+toggle.onclick =  function(){
+  header.classList.toggle('open');
+}
