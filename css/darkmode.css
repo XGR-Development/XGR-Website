@@ -90,7 +90,7 @@ body {
 header ul {
     position: relative;
     display: flex;
-    gap: 50px; 
+    gap: 40px; 
     padding: 10px 30px;
 }
 
@@ -101,10 +101,10 @@ header ul li {
 header ul li a {
     position: relative;
     text-decoration: none;
-    font-size: 1.35em;
+    font-size: 1.25em;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.12em;
 }
 
 header ul li a::before {
@@ -238,6 +238,11 @@ g .parallax{
     right: 20px;
 }
 
+@media (min-width: 768px) and (max-width: 840px) {
+    header ul {
+        gap: 20px; 
+    }
+}
 @media (max-width: 768px) {
     /** Main Body Waves **/
     .waves {
