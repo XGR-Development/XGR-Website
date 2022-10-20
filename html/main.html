@@ -13,26 +13,17 @@
 <body>
   <header class="header">
     <div class="header-logo-box">
-      <a href="/html/main.html" target="_self" class="header-logo-anchor">
         <img class="header-logo" id="header-logo" src="/src/xgr-dark.png" alt="XGR Development Logo" height="60" width="60">
-      </a>
     </div>
-    <nav class="header-navbar">
-      <ul class="navbar-list">
-        <li class="navbar-list-container">
-          <a href="/html/who/main.html" target="_self" class="navbar-list-item">
-            Who we are
-          </a>
-        </li>
-        <li class="navbar-list-container">
-          <a href="/html/products/main.html" target="_self" class="navbar-list-item">
-            Products
-          </a>
-        </li>
+    <div class="header-group">
+      <ul class="header-navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
-    <div class="header-container">
-      <button class="header-dark-mode-button" id="mode-button" onclick="switchMode()">Dark Mode 🌙</button>
+      <ion-icon name="contrast-outline" class="theme-toggle" onclick="switchMode()"></ion-icon>
+      <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
     </div>
   </header>
 
@@ -49,10 +40,10 @@
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
       </defs>
         <g class="parallax">
-          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(21,21,21,0.7)" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(21,21,21,0.5)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(21,21,21,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#151515" />
+          <use href="#gentle-wave" x="48" y="0" fill="rgba(21,21,21,0.7)" />
+          <use href="#gentle-wave" x="48" y="3" fill="rgba(21,21,21,0.5)" />
+          <use href="#gentle-wave" x="48" y="5" fill="rgba(21,21,21,0.3)" />
+          <use href="#gentle-wave" x="48" y="7" fill="#151515" />
         </g>
       </svg>
     </div>
@@ -87,5 +78,7 @@
   </footer>
 
 <script src="/js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
