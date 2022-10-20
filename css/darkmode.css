@@ -90,7 +90,7 @@ body {
 header ul {
     position: relative;
     display: flex;
-    gap: 30px; 
+    gap: 50px; 
     padding: 10px 30px;
 }
 
@@ -101,7 +101,8 @@ header ul li {
 header ul li a {
     position: relative;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.35em;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.13em;
 }
@@ -110,9 +111,9 @@ header ul li a::before {
     content: '';
     position: absolute;
     left: -1px;
-    bottom: -2px;
+    bottom: -3px;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: #eda3fa;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
@@ -127,7 +128,7 @@ header ul li a:hover::before {
 
 .theme-toggle {
     position: relative;
-    font-size: 1.3em;
+    font-size: 1.4em;
     cursor: pointer;
     transform: translateX(-20px);
 }
@@ -137,183 +138,138 @@ header ul li a:hover::before {
     display: none;
 }
 
-.header-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 200px;
-    text-align: center;
-}
-
-.header-dark-mode-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #151515;
-    font-size: 17px;
-    border: 2px solid #eda3fa30;
-    border-radius: 2rem;
-    height: 35px;
-    width: 150px;
-    cursor: pointer;
-}
-
-.header-dark-mode-button:hover {
-    animation: modeButtonChange 2s forwards;
-}
-
 .main {
     position: relative;
-    top: 80px;
-    height: 1000px;
-    width: 100%;
-    background: #eda3fa30;
-}
-
-.main-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-size: xx-large;
-    width: 100%;
-    height: 100%;
+    padding-top: 80px;
+    height: 1000px;
+    background: #eda3fa50;
 }
 
-.title:hover {
-    padding: 10px;
-    border-bottom: 3px inset #eda3fa;
-    border-right: 3px inset #eda3fa;
-    border-bottom-right-radius: 0.70rem;
+.title {
+    display: block;
+    justify-content: center;
+    font-size: xx-large;
+    margin: auto;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background: #eda3fa;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.title:hover::before {
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+.footer {
+    width: 100%;
+    background: #eda3fa50;
 }
 
 .waves {
     position: relative;
-    bottom: 0px;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height:15vh;
-    margin-bottom:-7px; /*Fix for safari gap*/
-    min-height:100px;
-    max-height:150px;
-  }
-  
-  .content {
-    position:relative;
-    height:20vh;
-    text-align:center;
-    background-color: white;
-  }
-  
-  /* Animation */
-  
-  .parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-  }
-  .parallax > use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-  }
-  .parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-  }
-  .parallax > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-  }
-  .parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-  }
-  @keyframes move-forever {
-    0% {
-     transform: translate3d(-90px,0,0);
-    }
-    100% { 
-      transform: translate3d(85px,0,0);
-    }
-  }
-
-.footer {
-    position: relative;
-    bottom: 0px;
-    left: 0px;
     display: flex;
-    height: 100px;
     width: 100%;
-    background-color: #151515;
+    min-height: 80px;
+    max-height: 130px;
 }
 
-.footer-left-part {
+.content {
+  position:relative;
+  height:auto;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+g .parallax{
+    height: 150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 20;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 24s;
+}
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+.footer-group {
+    z-index: 5;
+    height: 120px;
+    background: #151515;
+    display: flex;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
-.footer-medias-list {
-    height: 60%;
-    width: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+.footer-navigation {
     list-style: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-medias-list li {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer-media-list-item img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer-rights {
-    height: 40%;
-    font-size: smaller;
-    text-align: center;
-}
-
-.footer-right-part {
     display: flex;
-    height: 100%;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 0px 45px;
-}
-
-.ribbon {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-navigation #rights {
+    font-size: 15px;
+}
+
+.footer-navigation ul li a {
+    font-size: 2em;
+}
+
+.footer-logo {
+    position: absolute;
+    right: 20px;
 }
 
 @media (max-width: 768px) {
     /** Main Body Waves **/
     .waves {
-      height: 40px;
-      min-height:40px;
+      min-height: 10x;
+      max-height: 50px;
     }
     .content {
-      height:30vh;
-    }
-
-    /** Dark Mode Button **/
-    .header-dark-mode-button{
-        font-size: 0;
-        width: 35px
-    }
-    .header-dark-mode-button::before {
-        content: "🌙";
-        font-size: initial;
+      height:20vh;
     }
 
     .theme-toggle {
@@ -323,7 +279,7 @@ header ul li a:hover::before {
     .menu-toggle {
         position: absolute;
         display: block;
-        font-size: 2.15em;
+        font-size: 2.35em;
         cursor: pointer;
         z-index: 10;
         transform: translateX(-20px);
@@ -345,7 +301,7 @@ header ul li a:hover::before {
         flex-direction: column;
         background: #151515;
         width: 100%;
-        height: calc(70vh - 80px);
+        height: auto;
         padding: 40px;
         border-top: 1px solid #eda3fa30;
         z-index: 10;
@@ -353,5 +309,46 @@ header ul li a:hover::before {
 
     header.open .header-navigation li a {
         font-size: 1.25em;
+    }
+
+    .footer-group {
+        z-index: 5;
+        height: 250px;
+        background: #151515;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-navigation {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(-40px);
+    }
+    
+    .footer-navigation ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        font-size: 0.75em;
+    }
+    
+    .footer-navigation #rights {
+        font-size: 9px;
+        line-height: normal;
+    }
+    
+    .footer-navigation ul li a {
+        font-size: 2em;
+    }
+    
+    .footer-logo {
+        position: absolute;
+        left: calc(50% - 30px);
+        transform: translateY(60px);
+        width: 60px;
     }
   }
