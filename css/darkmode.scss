@@ -96,11 +96,34 @@ body {
         border-radius: 0.6em;
         height: 50px;
         width: 200px;
-        font-size: 1.3em;
         cursor: pointer;
+
+        span {
+            font-size: 1.5em;
+        }
 
         &:hover {
             animation: filter 1.5s linear infinite;
+        }
+
+        &::before span {
+            content: '';
+            position: absolute;
+            left: 25%;
+            bottom: 7px;
+            width: 50%;
+            height: 2px;
+            border-radius: 2em;
+            background: #eda3fa;
+            transform: scaleX(0);
+            transition: transform 0.5s ease-in-out;
+            transform-origin: right;
+        }
+
+        &:hover::before span {
+            transform: scaleX(1);
+            transition: transform 0.5s ease-in-out;
+            transform-origin: left;
         }
     }
 }
