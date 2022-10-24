@@ -37,3 +37,11 @@ let navigation = document.querySelector(".header-navigation")
 toggle.onclick =  function(){
   header.classList.toggle('open');
 }
+
+let body = document.querySelector('body')
+let landpage = document.querySelector('.landpage')
+
+function lpClosing () {
+  body.classList.toggle('lpmode')
+  landpage.classList.toggle('closed')
+}
